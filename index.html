@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ratio Frequency</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>ratio2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14565,21 +14565,21 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="League-of-Legends-Final-Tutorial">League of Legends Final Tutorial<a class="anchor-link" href="#League-of-Legends-Final-Tutorial">&#182;</a></h1>
+<center><h1> League of Legends Final Tutorial</h1></center>
 </div>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Created-by-Corey-Huang,-Nishar-Pillai,-and-Julien-Heurteux">Created by Corey Huang, Nishar Pillai, and Julien Heurteux<a class="anchor-link" href="#Created-by-Corey-Huang,-Nishar-Pillai,-and-Julien-Heurteux">&#182;</a></h3>
+<center><h3>Created by Corey Huang, Nishar Pillai, and Julien Heurteux</h2></center>
 </div>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2>
+<center><h2>Introduction</h2></center>
 </div>
 </div>
 </div>
@@ -14610,7 +14610,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Preprocessing-Data">Preprocessing Data<a class="anchor-link" href="#Preprocessing-Data">&#182;</a></h2>
+<center><h2>Preprocessing Data</h2></center>
 </div>
 </div>
 </div>
@@ -14626,7 +14626,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14641,7 +14641,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
 </pre></div>
 
      </div>
@@ -14678,7 +14677,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">winner_df</span> <span class="o">=</span>  <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">&#39;match_winner_data_version1.pickle&#39;</span><span class="p">)</span>
@@ -14946,32 +14945,21 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>For the dataset above, there are 13 columns:</p>
-
-<pre><code>GameCreation: A unique number tied to the creation of the game
-
-GameDuration: How many seconds a game lasted
-
-GameId: A unique number tied to the game and its participants
-
-GameMode: The gamemode (Classic, ARAM, URF, etc.)
-
-GameType: The type of game (Custom or Normal)
-
-GameVersion: What version of the game was played
-
-MapId: What map the game was played on
-
-ParticipantIds: Participant names and profiles
-
-Participants: How each participant performed in the game
-
-PlatformId: What country the game is played in
-
-QueueId: What type of queue the players used (Ranked Solo, Normal, One for All, etc.)
-
-SeasonId: What season the game is played in
-
-Status.message and Status.status_code which are both null</code></pre>
+<ul>
+<li>GameCreation: A unique number tied to the creation of the game</li>
+<li>GameDuration: How many seconds a game lasted</li>
+<li>GameId: A unique number tied to the game and its participants</li>
+<li>GameMode: The gamemode (Classic, ARAM, URF, etc.)</li>
+<li>GameType: The type of game (Custom or Normal)</li>
+<li>GameVersion: What version of the game was played</li>
+<li>MapId: What map the game was played on</li>
+<li>ParticipantIds: Participant names and profiles</li>
+<li>Participants: How each participant performed in the game</li>
+<li>PlatformId: What country the game is played in</li>
+<li>QueueId: What type of queue the players used (Ranked Solo, Normal, One for All, etc.)</li>
+<li>SeasonId: What season the game is played in</li>
+<li>Status.message and Status.status_code which are both null</li>
+</ul>
 
 </div>
 </div>
@@ -14980,7 +14968,7 @@ Status.message and Status.status_code which are both null</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">winner_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -15001,7 +14989,7 @@ Status.message and Status.status_code which are both null</code></pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
 
@@ -15160,7 +15148,7 @@ Status.message and Status.status_code which are both null</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">loser_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -15181,7 +15169,7 @@ Status.message and Status.status_code which are both null</code></pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 
 
 
@@ -15340,40 +15328,25 @@ Status.message and Status.status_code which are both null</code></pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Both the winner and loser dataframes above have the same column types that are derived from the participants section of the match_data_version1 data. The 17 columns in each are:</p>
-
-<pre><code>teamId: If they were red or blue
-
-win: If they won the game
-
-firstBlood: If they got the first kill in the game
-
-firstTower: If they got the first tower in the game
-
-firstInhibitor: If they got the first inhibitor in the game
-
-firstBaron: If they got the first Baron in the game
-
-firstDragon: If they got the first Dragon in the game
-
-firstRiftHerald: If they got the first Rift Herald in the game
-
-towerKills: The amount of towers the team destroyed
-
-inhibitorKills: The amount of inhibitors the team destroyed
-
-baronKills: The amount of Barons the team killed
-
-dragonKills: The amount of Dragons the team killed
-
-vilemawKills: The amount of Vilemaws the team killed
-
-riftHeraldKills: The amount of Rift Heralds the team killed
-
-dominionVictoryScore: The teams Dominion score (when applicable)
-
-bans: List of champion ids that were banned
-
-gameId: A unique number that identifies the game</code></pre>
+<ul>
+<li>teamId: If they were red or blue</li>
+<li>win: If they won the game</li>
+<li>firstBlood: If they got the first kill in the game</li>
+<li>firstTower: If they got the first tower in the game</li>
+<li>firstInhibitor: If they got the first inhibitor in the game</li>
+<li>firstBaron: If they got the first Baron in the game</li>
+<li>firstDragon: If they got the first Dragon in the game</li>
+<li>firstRiftHerald: If they got the first Rift Herald in the game</li>
+<li>towerKills: The amount of towers the team destroyed</li>
+<li>inhibitorKills: The amount of inhibitors the team destroyed</li>
+<li>baronKills: The amount of Barons the team killed</li>
+<li>dragonKills: The amount of Dragons the team killed</li>
+<li>vilemawKills: The amount of Vilemaws the team killed</li>
+<li>riftHeraldKills: The amount of Rift Heralds the team killed</li>
+<li>dominionVictoryScore: The teams Dominion score (when applicable)</li>
+<li>bans: List of champion ids that were banned</li>
+<li>gameId: A unique number that identifies the game</li>
+</ul>
 
 </div>
 </div>
@@ -15390,7 +15363,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Merge winner and loser datasets</span>
@@ -15741,14 +15714,14 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Tidying-Data">Tidying Data<a class="anchor-link" href="#Tidying-Data">&#182;</a></h3>
+<center><h2>Tidying Data</h2></center>
 </div>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>For our analysis, we are interested in exploring the significance of the bonus objectives within the game and how important they are to obtaining victory. In addition, we want to specifically look at a single game mode type for consistency within our data. As a result, we will narrow our dataset to only look at classical ranked solo queue games on Summoner's Rift because it is the most common and popular game mode while also being competitive. To do this, we can look at Riot's API documentation to see that we can obtain the data we want by filtering for gameMode = CLASSIC and mapID = 11 for Summoner's Rift, and queueId = 420 for ranked solo queue. To keep the data even more consistent, we will also filter for the most recent version of the game using seasonId == 13 for season 2019.</p>
+<p>For our analysis, we are interested in exploring the significance of the bonus objectives within the game and how important they are to obtaining victory. In addition, we want to specifically look at a single game mode type for consistency within our data. As a result, we will narrow our dataset to only look at classical ranked solo queue games on Summoner's Rift because it is the most common and popular game mode while also being competitive. To do this, we can look at Riot's API documentation to see that we can obtain the data we want by filtering for gameMode = CLASSIC and mapID = 11 for Summoner's Rift, and queueId = 420 for ranked solo queue. To keep the data even more consistent, we will also filter for the most recent version of the game using seasonId = 13 for season 2019.</p>
 
 </div>
 </div>
@@ -15768,7 +15741,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Filter dataset to only relevant games</span>
@@ -16127,7 +16100,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Filter columns to just bonus objectives</span>
@@ -16342,7 +16315,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">final</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;dk_win&#39;</span><span class="p">,</span> <span class="s1">&#39;bk_win&#39;</span><span class="p">,</span> <span class="s1">&#39;rhk_win&#39;</span><span class="p">,</span> <span class="s1">&#39;dk_loss&#39;</span><span class="p">,</span> <span class="s1">&#39;bk_loss&#39;</span><span class="p">,</span> <span class="s1">&#39;rhk_loss&#39;</span><span class="p">,</span> <span class="s1">&#39;firstDk_win&#39;</span><span class="p">,</span> <span class="s1">&#39;firstBk_win&#39;</span><span class="p">,</span> <span class="s1">&#39;firstRHk_win&#39;</span><span class="p">]</span>
@@ -16547,7 +16520,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Exploratory-Data-Analysis">Exploratory Data Analysis<a class="anchor-link" href="#Exploratory-Data-Analysis">&#182;</a></h2>
+<center><h2>Exploratory Data Analysis</h2></center>
 </div>
 </div>
 </div>
@@ -16570,7 +16543,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">final</span><span class="p">[[</span><span class="s1">&#39;firstDk_win&#39;</span><span class="p">,</span><span class="s1">&#39;firstBk_win&#39;</span><span class="p">,</span> <span class="s1">&#39;firstRHk_win&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
@@ -16591,7 +16564,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
@@ -16656,7 +16629,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get number of wins based on first achieved objective</span>
@@ -16826,7 +16799,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
@@ -16901,14 +16874,14 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Benefits-of-Having-More-Objectives">Benefits of Having More Objectives<a class="anchor-link" href="#Benefits-of-Having-More-Objectives">&#182;</a></h3>
+<h3 id="Benefits-of-Taking-More-Objectives">Benefits of Taking More Objectives<a class="anchor-link" href="#Benefits-of-Taking-More-Objectives">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Another statistic we can look to see the significance of each bonus objective is how likely teams are to win given how many times they achieved a bonus objective. However, since both teams can achieve the same objectives, we will look at the difference's in the amount of objectives both teams achieved.</p>
+<p>Another statistic we can look to see the significance of each bonus objective is how likely teams are to win given how many times they achieved a bonus objective. However, since both teams can achieve the same objectives, we will look at the differences in the amount of objectives both teams achieved.</p>
 
 </div>
 </div>
@@ -16917,7 +16890,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Get difference between teams</span>
@@ -16943,7 +16916,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 
 
 
@@ -17055,11 +17028,11 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Show difference of wins for each objective difference</span>
-<span class="n">diffs</span><span class="o">.</span><span class="n">DragDiff</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">&#39;bar&#39;</span><span class="p">)</span>
+<span class="n">diffs</span><span class="o">.</span><span class="n">DragDiff</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Dragon Difference&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17077,13 +17050,13 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;AxesSubplot:&gt;</pre>
+<pre>&lt;AxesSubplot:title={&#39;center&#39;:&#39;Dragon Difference&#39;}&gt;</pre>
 </div>
 
 </div>
@@ -17097,7 +17070,7 @@ gameId: A unique number that identifies the game</code></pre>
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -17113,10 +17086,10 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">diffs</span><span class="o">.</span><span class="n">BaronDiff</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">&#39;bar&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">diffs</span><span class="o">.</span><span class="n">BaronDiff</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Baron Difference&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17134,13 +17107,13 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;AxesSubplot:&gt;</pre>
+<pre>&lt;AxesSubplot:title={&#39;center&#39;:&#39;Baron Difference&#39;}&gt;</pre>
 </div>
 
 </div>
@@ -17154,7 +17127,7 @@ gameId: A unique number that identifies the game</code></pre>
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -17170,10 +17143,10 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">diffs</span><span class="o">.</span><span class="n">RiftDiff</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">&#39;bar&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">diffs</span><span class="o">.</span><span class="n">RiftDiff</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Rift Herald Difference&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17191,13 +17164,13 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;AxesSubplot:&gt;</pre>
+<pre>&lt;AxesSubplot:title={&#39;center&#39;:&#39;Rift Herald Difference&#39;}&gt;</pre>
 </div>
 
 </div>
@@ -17211,7 +17184,7 @@ gameId: A unique number that identifies the game</code></pre>
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -17243,15 +17216,14 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Looking at the effects of Rift Herald Differences individually</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Show effects of Dragon differences individually</span>
 <span class="n">dragdiff</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
 <span class="n">dragdiff</span><span class="p">[</span><span class="s1">&#39;wins&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">diffs</span><span class="o">.</span><span class="n">DragDiff</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 
 <span class="c1"># Get the number of times a team achieved a certain difference</span>
-
 <span class="n">dragdiff</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">dragdiff</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;wins&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">dragdiff</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;wins&#39;</span><span class="p">])</span>
 <span class="n">dragdiff</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">dragdiff</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;wins&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">dragdiff</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;wins&#39;</span><span class="p">])</span>
 <span class="n">dragdiff</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">dragdiff</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;wins&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">dragdiff</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;wins&#39;</span><span class="p">])</span>
@@ -17279,7 +17251,7 @@ gameId: A unique number that identifies the game</code></pre>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Win Percentage&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Win Percentage vs Number of Games Achieved for Each Dragon Difference&quot;</span><span class="p">)</span>
 
-<span class="c1">#plot winrates of each combination of first objectives</span>
+<span class="c1">#Plot winrates of each combination of first objectives</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
 </pre></div>
 
@@ -17298,7 +17270,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 
 
 
@@ -17334,10 +17306,11 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">barondiff</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Show effects of Baron differences individually</span>
+<span class="n">barondiff</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
 <span class="n">barondiff</span><span class="p">[</span><span class="s1">&#39;wins&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">diffs</span><span class="o">.</span><span class="n">BaronDiff</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 
 <span class="n">barondiff</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">barondiff</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;wins&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">barondiff</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;wins&#39;</span><span class="p">])</span>
@@ -17382,7 +17355,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
@@ -17418,7 +17391,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Looking at the effects of Rift Herald Differences individually</span>
@@ -17466,7 +17439,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
@@ -17509,6 +17482,647 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Do-Objectives-affect-Win-Rate?">Do Objectives affect Win Rate?<a class="anchor-link" href="#Do-Objectives-affect-Win-Rate?">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>After determining that taking objectives has a correlation with win rate, one other factor that can affect win rate is game duration. Every major objective in league has a respawn timer of 5-8 minutes, so taking more objectives as the game goes on may skew results. In order to factor out game duration, the objective capture difference can be divided by the total number of each objective captured in order to give a ratio of objectives taken relatively each game, because taking 3 out of four dragons may have a different amount of significance compared to taking 5 out of 6 dragons.</p>
+
+</div>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The first step is to take the difference of each objective and divide it by the total objectives taken to get the ratio of objectives taken vs total objectives. The data is stored in a dataframe separate from the other data to keep analysis tidy.</p>
+
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">finald</span> <span class="o">=</span> <span class="n">final</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">finald</span><span class="p">[</span><span class="s1">&#39;DDiff&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;dk_win&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;dk_loss&#39;</span><span class="p">]</span>
+<span class="n">finald</span><span class="p">[</span><span class="s1">&#39;DTotal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;dk_win&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;dk_loss&#39;</span><span class="p">]</span>
+<span class="n">finald</span><span class="p">[</span><span class="s1">&#39;DRatio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;DDiff&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">finald</span><span class="p">[</span><span class="s1">&#39;DTotal&#39;</span><span class="p">]</span>
+<span class="n">finald</span><span class="p">[</span><span class="s1">&#39;BDiff&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;bk_win&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;bk_loss&#39;</span><span class="p">]</span>
+<span class="n">finald</span><span class="p">[</span><span class="s1">&#39;BTotal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;bk_win&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;bk_loss&#39;</span><span class="p">]</span>
+<span class="n">finald</span><span class="p">[</span><span class="s1">&#39;BRatio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;BDiff&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">finald</span><span class="p">[</span><span class="s1">&#39;BTotal&#39;</span><span class="p">]</span>
+<span class="n">finald</span><span class="p">[</span><span class="s1">&#39;RHDiff&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;rhk_win&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;rhk_loss&#39;</span><span class="p">]</span>
+<span class="n">finald</span><span class="p">[</span><span class="s1">&#39;RHTotal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;rhk_win&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;rhk_loss&#39;</span><span class="p">]</span>
+<span class="n">finald</span><span class="p">[</span><span class="s1">&#39;RHRatio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;RHDiff&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">finald</span><span class="p">[</span><span class="s1">&#39;RHTotal&#39;</span><span class="p">]</span>
+<span class="n">finald</span><span class="p">[</span><span class="s1">&#39;BRatio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;BRatio&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">finald</span><span class="p">[</span><span class="s1">&#39;RHRatio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;RHRatio&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">finald</span><span class="p">[</span><span class="s1">&#39;Diff&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;DDiff&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;BDiff&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;RHDiff&#39;</span><span class="p">]</span>
+<span class="n">finald</span><span class="p">[</span><span class="s1">&#39;Total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;DTotal&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;BTotal&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;RHTotal&#39;</span><span class="p">]</span>
+<span class="n">finald</span><span class="p">[</span><span class="s1">&#39;Ratio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[</span><span class="s1">&#39;Diff&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">finald</span><span class="p">[</span><span class="s1">&#39;Total&#39;</span><span class="p">]</span>
+<span class="n">finalr</span> <span class="o">=</span> <span class="n">finald</span><span class="p">[[</span><span class="s1">&#39;DRatio&#39;</span><span class="p">,</span><span class="s1">&#39;BRatio&#39;</span><span class="p">,</span><span class="s1">&#39;RHRatio&#39;</span><span class="p">,</span><span class="s1">&#39;Ratio&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">finald</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>dk_win</th>
+      <th>bk_win</th>
+      <th>rhk_win</th>
+      <th>dk_loss</th>
+      <th>bk_loss</th>
+      <th>rhk_loss</th>
+      <th>firstDk_win</th>
+      <th>firstBk_win</th>
+      <th>firstRHk_win</th>
+      <th>DDiff</th>
+      <th>...</th>
+      <th>DRatio</th>
+      <th>BDiff</th>
+      <th>BTotal</th>
+      <th>BRatio</th>
+      <th>RHDiff</th>
+      <th>RHTotal</th>
+      <th>RHRatio</th>
+      <th>Diff</th>
+      <th>Total</th>
+      <th>Ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>3</td>
+      <td>...</td>
+      <td>1.000000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>5</td>
+      <td>5</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>2</td>
+      <td>...</td>
+      <td>1.000000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>2</td>
+      <td>...</td>
+      <td>1.000000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>2</td>
+      <td>...</td>
+      <td>0.500000</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>3</td>
+      <td>7</td>
+      <td>0.428571</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>-1</td>
+      <td>...</td>
+      <td>-0.200000</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.333333</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>2</td>
+      <td>10</td>
+      <td>0.200000</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>109155</th>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>1</td>
+      <td>...</td>
+      <td>1.000000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>109156</th>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0.333333</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.000000</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>4</td>
+      <td>6</td>
+      <td>0.666667</td>
+    </tr>
+    <tr>
+      <th>109157</th>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>1</td>
+      <td>...</td>
+      <td>1.000000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>109161</th>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.000000</td>
+      <td>-2</td>
+      <td>2</td>
+      <td>-1.0</td>
+      <td>-1</td>
+      <td>7</td>
+      <td>-0.142857</td>
+    </tr>
+    <tr>
+      <th>109162</th>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1.000000</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.0</td>
+      <td>2</td>
+      <td>10</td>
+      <td>0.200000</td>
+    </tr>
+  </tbody>
+</table>
+<p>78123 rows × 21 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>for each set of objectives and all objectives taken total, each ratio is compared to its negative ratio in order to determine the total amount of games won given each instance. This is</p>
+
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dwrg</span> <span class="o">=</span> <span class="n">finalr</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;DRatio&#39;</span><span class="p">])[</span><span class="s1">&#39;DRatio&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="n">dwrg</span> <span class="o">=</span> <span class="n">dwrg</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span>
+<span class="n">dwrg</span> <span class="o">=</span> <span class="n">dwrg</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;DRatio&quot;</span> <span class="p">:</span> <span class="s2">&quot;count&quot;</span><span class="p">})</span>
+<span class="n">dwrg</span> <span class="o">=</span> <span class="n">dwrg</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">dwrg</span> <span class="o">=</span> <span class="n">dwrg</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">dwrg</span> <span class="o">=</span> <span class="n">dwrg</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">dwrg2</span> <span class="o">=</span> <span class="n">dwrg</span><span class="o">.</span><span class="n">loc</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">dwrg2</span> <span class="o">=</span> <span class="n">dwrg2</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;count&quot;</span> <span class="p">:</span> <span class="s2">&quot;countloss&quot;</span><span class="p">,</span> <span class="s2">&quot;DRatio&quot;</span> <span class="p">:</span> <span class="s2">&quot;Ratioloss&quot;</span><span class="p">})</span>
+<span class="n">dwrg</span> <span class="o">=</span> <span class="n">dwrg</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dwrg2</span><span class="p">)</span>
+<span class="n">dwrg</span><span class="p">[</span><span class="s1">&#39;Win Rate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dwrg</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">dwrg</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">dwrg</span><span class="p">[</span><span class="s1">&#39;countloss&#39;</span><span class="p">])</span>
+<span class="n">dwrg</span><span class="p">[</span><span class="s1">&#39;DRatio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dwrg</span><span class="p">[</span><span class="s1">&#39;DRatio&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:,.1f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">dwrg</span><span class="p">[</span><span class="s1">&#39;DRatio&#39;</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">dwrg</span><span class="p">[</span><span class="s1">&#39;Win Rate&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Ratio of Dragons Taken:Total vs Win Rate&#39;</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Dragon Ratio&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYIAAAEWCAYAAABrDZDcAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjUuMSwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy/YYfK9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAgnklEQVR4nO3deZgcZbn+8e9NQhBkCZJgSCAE2UFZNCJyRAGPyCIEcANxAeXHiRpxD3A8KOe4x10B80NAQFllEzCIHhAR2RKULSwaASGBYQ8QZDHxOX+875DKpLunZrprltT9ua65pqvqraefqq7up96qrmpFBGZmVl8rDXYCZmY2uFwIzMxqzoXAzKzmXAjMzGrOhcDMrOZcCMzMas6FYBiSNFPSMRXE3VzSnyU9I+mITsdfkUg6RNI1g51HJ0i6T9K/D3Ye3aravq05F4IBkN9oz0laJKlL0qmSVi8573IfOBExNSK+XEGq04GrImKNiPhhg1yukvR8LhRPS7pJ0lGSVqkglwEh6eD8uizKr9G/CsOLBjm3uYVcluR13z38n03mmSQpJI0c6HybkXS3pPcUhv8t59hz3CJJI9vZvgvb6CJJj0m6QNJ6JefdRdL8/jzvcOdCMHD2iYjVge2A7YGjBzedhjYE5vbSZlpErAGsB3wWOBCYJUmNGg+lD6RGIuKMiFg9vzZ7Ag92D+dxg5nb1oU8/kBa9925fW0wc+ujq4G3FIbfDNzVYNy1EbG4A883La+zTYDVgW93IOYKzYVggEVEF3A5qSAAkPeq/5b3tO+QtH8evyUwE3hj3sNZmMefKukrhfn/n6R5kp6QdLGk8c2eX9K+eU9zYd572jKPvxLYFTguP9dmvSzHsxFxFbAv8EZg7xznWEnnSfq5pKeBQyTtIOm6/JwPSTpO0qhCTrvnvcanJJ0g6feSDsvTVpL0X5L+LukRSadLWitP6977/ZCk+/Me4BcKcXeQNCf3Xh6W9N1eX6Bl11XD16VJ229JukbSWvnv5LysCyR9RdKI3O6Q3O7bkp6UdK+kPfuYV9N1QvrQBViYX8c3StpY0pWSHs/r6AxJo0s8z45KPdgRhXH7S7o1Py67fq8mfdB32xn4ZoNxV+e4L23f3Xvpkj6bl/UhSYf2vpYgIhYCF7Hse+1QSXfm1/QeSf+Rx78cuAwYr6W9rvF5XXdvB49LOlfSK8o8/3DiQjDAJK1P2vOcVxj9N9IbYS3gv4GfS1ovIu4EpgLX5b3A0Q3i7QZ8HXgPaS/978DZTZ57M+As4FPAWGAWcImkURGxG8vudf6lzPJExP3AnJx/tynAecBo4AxgCfBpYAypaLwV+FjOaUxuezSwDnA3sFMh1iH5b1fgVaQ9vON6pPEmYPMc94vdxQ34AfCDiFgT2Bg4t8wyFTR8XYoN8gfFT4BtgN0j4ingNGAxaY90e2B34LDCbG/IyzkGmAGcLKUeVf7QubSXvA6h+Trp/nAdnV/H6wCRtpHxwJbABsCxvS18RFwPPAvsVhj9PuDM/Ljs+v09sLWkV0haCZgMnAOMLozbiaVFrKdxpNdgAvAR4HhJa/eWv6R1gANY9r32CPAOYE3gUOB7kl4bEc+yfI/wQeAIYD9S72U88CRwfG/PPexEhP8q/gPuAxYBzwABXEF6ozZrfzMwJT8+BLimx/RTga/kxycDMwrTVgf+CUxqEPcY4NzC8ErAAmCXPHwVcFiLvBpOJxWen+THxwJX97I+PgVcmB9/kFTouqcJeKD7efK6+lhh+uZ5+UYCk/L6XL8w/UbgwPz4atIH+JiSr9MuwPw+vC43kD7QzgdG5fGvBF4AVi3MdxDwu8J88wrTVsvLMK6X3F5a9yXXycgWsfYD/txj+/z3Jm2/ApySH69BKgwb9nX95ueYQiqMfyxsN93jngdWabB97wI8V1we0of5ji3W0z+Ap/J6uBmY2CKvi4BPNnv9gTuBtxaG1+te12W2qeHy5x7BwNkv0rH1XYAtSHuDAEj6oKSb86GThcCri9N7MZ7UCwAgIhYBj5P2nnpr+y/Sh26jtn0xAXiiMPxAcaKkzSRdmg8zPA18jaXLN77YPtK7rXjCbpmc8+ORpA/cbl2Fx/8gFUNIe4+bAXdJmi3pHX1ZqBKvyyakD7L/jogX87gNgZWBhwrz/X9g3Ub5RsQ/8sO+nI8os06Ky7GupLPzYaqngZ9Tfvs6EzhA6QsBBwB/ioju5+7L+u0+PPRmUs8T4JrCuBsi4oUm8z4ey547KL7GjRwREWuRemlrA+t3T5C0p6TrlQ6jLgT2ovW62BC4sPBa3knq4TZc18OVC8EAi4jfk/Z4vg0gaUPgJ8A0YJ1Ih39uJ+0ZQ9qraeVB0sZKjvdy0iGWBSXainSYoFHbUiRtALyOpW9uWD7nH5NODm4a6TDCf7J0+R5i2TeqisM9cwYmkg67PNxbbhHx14g4iPQh/E3gvLx+elXidYH0oXAocJmkzfO4B0g9gjERMTr/rRkRW5d53pJarZNG28vX8/ht8vp/f4/laCoi7iAVmj1Z9rBQX9dvdyHYmaXbyh8K45odFuq3iLiN1KM5XskqpN7bt4FX5td0Fq3faw8AexZey9ER8bKI6Pd7ZihyIRgc3wfeJmk74OWkDfBRSCezSHue3R4G1lfh5GoPZwKHStoub+hfI+1d3deg7bnA3pLeKmll0rd+XgCu7esCSFpN0luAX5IOx8xq0XwN4GlgkaQtgI8Wpv0KeI2k/ZS+YfRx0jHhbmcBn5a0kdJXbr8GnBMlvl0i6f2Sxuaez8I8ekm5Jez1dQEgIs4iFbb/lbRxRDwE/Ab4jqQ18zmEjfO66pRW6+RR4F+kcwfd1iAdmlwoaQLw+T4+35mkY+VvBn7RPbKP6/dq0iGgtwB/zONuAzYinevoeCHITiMVqn2BUcAqpHW0WOkk/e6Ftg8D62jpiXdIX9b4at4xQNJYSVMqynXQuBAMgoh4FDgdOCbvcX0HuI60Ib6GpW8UgCtJX+nskvRYg1hXkI79n0/au96Y9JXORs97N2lv8EfAY8A+pK+1vtiofRPHSXom5/r9/Lx75A+DZj5H2pt8hrSXfU4hp8eAd5NOmj4ObEU6+dx9mOAU4GekD4p7SceSP1Ey1z2AuUrXA/yAdO7g+TIzlnhdim1PA/4HuFLSJNJ5j1HAHaSTi+eRji33StJ/Srqsl2ZN10k+1PRV4I/5cMaOpOP4ryUdN/8VcEGZXArOIh3SvDK/Xt1Kr99IXz54BHgo0rd5ug9N3kg6cdvnnZEy8rb9Q9J77RlSQTuX9Lq8D7i40PYu0rLek9fd+LxcFwO/ydv99aST/SsU5RMgZkNC/gbJfODgiPjdYOdjVgfuEdigk/R2SaPzoa3u8wfXD3JaZrXhQmBDwRtJ39nvPly1X0Q8N7gpmdWHDw2ZmdWcewRmZjU3pG8I1siYMWNi0qRJg52GmdmwctNNNz0WEWMbTRt2hWDSpEnMmTNnsNMwMxtWJP292TQfGjIzqzkXAjOzmnMhMDOrORcCM7OacyEwM6s5FwIzs5pzITAzqzkXAjOzmnMhMDOruWF3ZbGZWZ088qMr2pp/3U+8tdc27hGYmdWcewRmZgNk+vTpdHV1MW7cOGbMmDHY6bzEhcDMbIB0dXWxYMGCwU5jOT40ZGZWcy4EZmY150JgZlZzLgRmZjXnk8VmVrkTL3ikrfkPP2DdDmVijbhHYGZWcy4EZmY150NDZmYd1vXduQ3HL1n44kv/m7UZ95mtK8urGfcIzMxqzoXAzKzmXAjMzGrOhcDMrOZcCMzMas6FwMys5lwIzMxqzoXAzKzmfEGZmdkAGbPqK5b5P1S4EJiZDZCj3/DxwU6hIRcCM6u9vx73cFvzbzrtlR3KZHD4HIGZWc25EJiZ1ZwLgZlZzbkQmJnVXKWFQNIeku6WNE/SUQ2mryXpEkm3SJor6dAq8zEzs+VVVggkjQCOB/YEtgIOkrRVj2YfB+6IiG2BXYDvSBpVVU5mZra8KnsEOwDzIuKeiHgROBuY0qNNAGtIErA68ASwuMKczMyshyoLwQTggcLw/Dyu6DhgS+BB4DbgkxHxr56BJB0uaY6kOY8++mhV+ZqZ1VKVhUANxkWP4bcDNwPjge2A4yStudxMESdGxOSImDx27NhO52lmVmtVFoL5wAaF4fVJe/5FhwIXRDIPuBfYosKczMyshyoLwWxgU0kb5RPABwIX92hzP/BWAEmvBDYH7qkwJzMz66Gyew1FxGJJ04DLgRHAKRExV9LUPH0m8GXgVEm3kQ4lHRkRj1WVk5mZLa/Sm85FxCxgVo9xMwuPHwR2rzIHMzNrzVcWm5nVnAuBmVnNuRCYmdWcC4GZWc35F8rMbNi58oz27jCw28G+MLXIPQIzs5pzITAzqzkXAjOzmnMhMDOrORcCM7OacyEwM6s5FwIzs5rzdQRm1tB7z/9LW/Of887NOpSJVc09AjOzmnMhMDOrORcCM7OacyEwM6s5FwIzs5pzITAzqzkXAjOzmnMhMDOrORcCM7Oa85XFZoNkn/POb2v+S971zg5lYnXnHoGZWc25EJiZ1ZwLgZlZzbkQmJnVnAuBmVnNuRCYmdWcC4GZWc25EJiZ1ZwLgZlZzbkQmJnVnAuBmVnNuRCYmdVcpYVA0h6S7pY0T9JRTdrsIulmSXMl/b7KfMzMbHmV3X1U0gjgeOBtwHxgtqSLI+KOQpvRwAnAHhFxv6R1q8rHzMwaq/I21DsA8yLiHgBJZwNTgDsKbd4HXBAR9wNExCMV5mNWW9OnT6erq4tx48YxY8aMwU7HhpgqDw1NAB4oDM/P44o2A9aWdJWkmyR9sFEgSYdLmiNpzqOPPlpRumYrrq6uLhYsWEBXV9dgp2JDUJWFQA3GRY/hkcDrgL2BtwPHSNpsuZkiToyIyRExeezYsZ3P1Mysxqo8NDQf2KAwvD7wYIM2j0XEs8Czkq4GtgX+UmFeZiuk/c//XdNpixY9B8BDi55r2u7Cd+5aSV429JXqEUhaVdLmfYw9G9hU0kaSRgEHAhf3aPNLYGdJIyWtBrwBuLOPz2NmZm3otRBI2ge4Gfh1Ht5OUs8P9OVExGJgGnA56cP93IiYK2mqpKm5zZ057q3AjcBJEXF7P5fFzMz6ocyhoWNJ3wC6CiAibpY0qUzwiJgFzOoxbmaP4W8B3yoTz8zMOq9MIVgcEU9Jjc79mtlwoDXWYqX836ynMoXgdknvA0ZI2hQ4Ari22rTMrJNevu/Bg52CDWFlThZ/AtgaeAE4E3gK+GSVSZmZ2cAp0yPYOyK+AHyhe4SkdwO/qCwrMzMbMGV6BEeXHGdmZsNQ0x6BpD2BvYAJkn5YmLQmsLjqxMzMbGC0OjT0IDAH2Be4qTD+GeDTVSZlZmYDp2khiIhbgFsknRkR/xzAnMzMbACVOVk8SdLXga2Al3WPjIhXVZaVmZkNmDIni38K/Jh0XmBX4HTgZ1UmZWZmA6dMIVg1Iq4AFBF/j4hjgd2qTcvMzAZKmUNDz0taCfirpGnAAsA/KWlmtoIo0yP4FLAa6dYSrwM+ADT8JTEzMxt+eu0RRMTs/HARcKikkcB7gRuqTMzMzAZG0x6BpDUlHS3pOEm7K5kGzAPeM3ApmplZlVr1CH4GPAlcBxwGfB4YBewXETdXn5qZmQ2EVoXgVRHxGgBJJwGPARMj4pkBycxsCHrH+Sf3e95L3/mRDmZi1jmtTha/dDVxRCwB7nURMDNb8bTqEWwr6en8WMCqeVhARMSalWdnZmaVa3WvoREDmYiZmQ2OMtcRmJnZCsyFwMys5lwIzMxqzoXAzKzmei0Ekg6Q9FdJT0l6WtIzhW8TmZnZMFfm7qMzgH0i4s6qkzEzs4FX5tDQwy4CZmYrrjI9gjmSzgEuAl7oHhkRF1SVlJmZDZwyhWBN4B/A7oVxAbgQmJmtAMr8HsGhA5GImZkNjqaFQNL0iJgh6UekHsAyIuKISjMzM7MB0apH0H2CeM5AJGJmZoOjVSHYWNLrgTMiYvFAJWTWzPTp0+nq6mLcuHHMmDFjsNMxW2G0KgTrAz8AtpB0K3At8Efguoh4YiCSMyvq6upiwYIFg52G2Qqn1W2oPwcgaRQwGdgJ+DDwE0kLI2KrgUnRzMyqVOaCslVJXyFdK/89CNxQJrikPSTdLWmepKNatHu9pCWS3lUmrpmZdU6rbw2dCGwNPEP64L8W+G5EPFkmsKQRwPHA24D5wGxJF0fEHQ3afRO4vF9LYCuUPX95UNNpLz77OAALnu1q2u6yKWdVkpfZiqxVj2AisArQBSwgfZgv7EPsHYB5EXFPRLwInA1MadDuE8D5wCN9iG1mZh3S6hzBHpJE6hXsBHwWeLWkJ0gnjL/US+wJwAOF4fnAG4oNJE0A9gd2A17fLJCkw4HDASZOnNjL05qZWV+0PEcQye3ALOAy0reGNgY+WSK2GoXsMfx94MiIWNJLHidGxOSImDx27NgST20rIq2xEowekf6bWce0OkdwBKkn8G/AP8lfHQVOAW4rEXs+sEFheH3SieaiycDZqePBGGAvSYsj4qKS+VuNrLz/2oOdgtkKqdV1BJOA84BPR8RD/Yg9G9hU0kakcwwHAu8rNoiIjbofSzoVuNRFwMxsYLU6R/CZdgJHxGJJ00jfBhoBnBIRcyVNzdNnthPfzMw6o8xtqPstImaRzi8UxzUsABFxSJW5mJlZYz7rZmZWcy4EZmY150JgZlZzLgRmZjXnQmBmVnMuBGZmNedCYGZWcy4EZmY150JgZlZzLgRmZjVX6S0mzAbbXhd+s635Z+1/ZIcyMRu63CMwM6s5FwIzs5pzITAzqzkXAjOzmnMhMDOrORcCM7OacyEwM6s5FwIzs5pzITAzqzlfWWxt+8o5b+/3vP/13ss7mImZ9Yd7BGZmNedCYGZWcy4EZmY150JgZlZzLgRmZjXnQmBmVnMuBGZmNedCYGZWc76gbBiYdfJebc2/10dmdSgTM1sRuUdgZlZzLgRmZjXnQmBmVnMuBGZmNedCYGZWc5UWAkl7SLpb0jxJRzWYfrCkW/PftZK2rTIfMzNbXmWFQNII4HhgT2Ar4CBJW/Vodi/wlojYBvgycGJV+ZiZWWNV9gh2AOZFxD0R8SJwNjCl2CAiro2IJ/Pg9cD6FeZjZmYNVFkIJgAPFIbn53HNfAS4rMJ8zMysgSqvLFaDcdGwobQrqRC8qcn0w4HDASZOnNip/MzMjGp7BPOBDQrD6wMP9mwkaRvgJGBKRDzeKFBEnBgRkyNi8tixYytJ1sysrqosBLOBTSVtJGkUcCBwcbGBpInABcAHIuIvFeZiZmZNVHZoKCIWS5oGXA6MAE6JiLmSpubpM4EvAusAJ0gCWBwRk6vKyczMllfp3UcjYhYwq8e4mYXHhwGHVZmDmZm15iuLzcxqzoXAzKzm/MM0FfnzzH36Pe/2Uy/pYCZmZq25R2BmVnPuEZQwffp0urq6GDduHDNmzBjsdMzMOsqFoISuri4WLFgw2GmYmVXCh4bMzGrOhcDMrOZcCMzMas6FwMys5lwIzMxqzoXAzKzmXAjMzGrO1xFkD53whabTljz1+Ev/m7Vb72NfrSQvM7OquUdgZlZzLgRmZjXnQ0M1dMppu7c1/4c/9JsOZWJmQ4F7BGZmNedCYGZWcy4EZmY150JgZlZzLgRmZjXnbw2VMGa1VZb5b2a2InEhKOGonbcc7BTMzCozbAvBoz/+eVvzj/3o+zuUiZnZ8OZzBGZmNedCYGZWcy4EZmY150JgZlZzLgRmZjXnQmBmVnMuBGZmNedCYGZWcy4EZmY150JgZlZzLgRmZjVXaSGQtIekuyXNk3RUg+mS9MM8/VZJr60yHzMzW15lhUDSCOB4YE9gK+AgSVv1aLYnsGn+Oxz4cVX5mJlZY1X2CHYA5kXEPRHxInA2MKVHmynA6ZFcD4yWtF6FOZmZWQ+KiGoCS+8C9oiIw/LwB4A3RMS0QptLgW9ExDV5+ArgyIiY0yPW4aQeA8DmwN0lUhgDPNb2glQTbyjnNtTjDeXcOh1vKOfW6XhDObdOxxus3DaMiLGNJlT5ewRqMK5n1SnThog4ETixT08uzYmIyX2ZZ6DiDeXchnq8oZxbp+MN5dw6HW8o59bpeEMxtyoPDc0HNigMrw882I82ZmZWoSoLwWxgU0kbSRoFHAhc3KPNxcAH87eHdgSeioiHKszJzMx6qOzQUEQsljQNuBwYAZwSEXMlTc3TZwKzgL2AecA/gEM7mEKfDiUNcLyhnNtQjzeUc+t0vKGcW6fjDeXcOh1vyOVW2cliMzMbHnxlsZlZzbkQmJnV3LAvBJK2kHSdpBckfa5Fu40k3SDpr5LOySewe7YpdcsLSX+QdHP+e1DSRU3alY0nSV+V9BdJd0o6os14p0q6t5Djdv2NVWj/I0mLWkwvm9vJkm7Jbc6TtHqb8c5Quo3J7ZJOkbRym/Gm5TYhaUyTNh29dUqJeKW28T7EOzjndaukayVt20asKTnOzZLmSHpTO7kV2r1e0hKl65HaWdZdJD1VeC98sZ3ccrybJc2V9Ps2c/t8Ia/b8/K+okmsUyQ9Iun2JtP7tM0tJyKG9R+wLvB64KvA51q0Oxc4MD+eCXy0QZu9gMtI1zfsCNxQ4vnPBz7YZFqpeKST5KcDK3UvU5vxTgXe1UvepZcVmAz8DFjUbjxgzcLj7wJHtRlvr9xGwFmNXtc+xtsemATcB4xpMH0E8DfgVcAo4BZgqzbWbZl4pbbxPsTbCVg7P96zxbooE2t1lp5r3Aa4q53cCu2uJH2ZpOl2XDK/XYBLW62zPsQaDdwBTGz1Pu3Lshba7wNc2WL6m4HXAre3s303+xv2PYKIeCQiZgP/bNZGkoDdgPPyqNOA/Ro07dMtLyStkeNe1KRJ2XgfBf4nIv7VvUxtxiujVCyle0Z9C5jeiXgR8XSOK2BVGlxA2Md4s3KbAG4kXYvSTrw/R8R9LZaz07dO6TVemW28j/GujYgn8+D1NF9nZWItyuse4OU0fz1Lxcs+QdrBavY+6Gu8MsrEeh9wQUTcDy3fp/3J7SDSjkxDEXE18ESL+dv6bBj2haCkdYCFEbE4D88HJjRoNwF4oDDcrF23/YEruj/c2oi3MfDe3LW+TNKmbcYD+GruIn5P0iptxJoGXBy9X99ROjdJPwW6gC2AH7UbL8dcGfgA8OtOxGuhTJy+PFen8upvvI+Q9iT7HUvS/pLuAn4FfLid3CRNIL2vZraI06f8gDcqHY68TNLWbcTaDFhb0lWSbpL0wQ7khqTVgD1Ixa+/2tqO6lIISt3Kog/turWs4n2ItwrwfKTLxH8CnNJmvKNJH7KvB14BHNmfWJLGA++m+Yd1f3IjIg4FxgN3Au9tN152AnB1RPyhQ/Ga6ditU/rRtozS8STtSioEjbaP0rEi4sKI2ILUy/5ym7l9n3S/sSUt4vQl3p9I99jZlrQdX9RGrJHA64C9gbcDx0jarI143fYB/hgRrfb4e9PWdjQsC4GkjxdOsowvMctjpK5S9wV0L93Kohgrjyt1ywtJ65C6f79qllsf4s1n6d7AhaRjrf2OFxEP5S7iC8BPc579ibU9sAkwT9J9wGqS5rW5rN05LgHOAd7ZbjxJXwLGAp/pMb7f+bXQ6VundPo2K6XiSdoGOAmYEhGPdyK3fPhiYzU5yV4y3mTg7Ly9vQs4QdJ+/Y0XEU9HxKL8eBawcpP8yr6uv46IZyPiMeBqoNmJ9r6suwNpvUNZRnvbUV9OKAzlP+BYWp8s/gXLniz+WIM2e7PsCZcbW8SbCpzWS06l4gHfAD4cS09uzW4z3nr5v0h7WN9oZ1kL87Q6WdxrvDxtk8LjbwPfbnNZDwOuBVbtxGtRaH8fjU8WjwTuATZi6UnArdvYjnqNV3Yb70N+E0lX8+/UgVibsPRk8WuBBd3D7Sxrbn8qrU8Wl8lvXCG/HYD7G+VXMtaWwBW57WrA7cCr21lWYC3Ssf+Xl3j/TaL5yeI+v5+Xmb8vjYfiX36h5wNPAwvz4zXztFnA+Pz4VaSTifNIRWGVBrFE+jGdvwG3AZML016KlYevIt1mu1VupeKRvo3wq9zmOmDbNuNdmaffDvwcWL2dZS2Mb1UIeo1H6oH+sZDbGRS+RdTPZV2c29yc/77YZrwj8ja0mLRHdVKDWHsBf8mxvpDHTQWm9vZcTXLrLV7Tbbyf8U4CniysszltxDoSmJvjXAe8qZ1l7dH2VMp9+61VftNyfreQTow3LX5lcgM+T/rm0O3Ap9pdVuAQ4OxWcXK7s4CHSF8YmE86pNfvba7nn28xYWZWc8PyHIGZmXWOC4GZWc25EJiZ1ZwLgZlZzbkQmJnVnAuBrVDyHRy77w55i6TPSBoS27mkSZKey/ndIel0NblbamGeXSTtVBie2sutDcz6rLKfqjQbJM9FxHYAktYFziRdtPOlYiNJI2PpvacG0t8iYrt8M7/fAu8hXU/RzC7AItJFc0T6iVezjhoSe0pmVYh0d8jDgWn5fu2HSPqFpEuA30haXdIVkv4k6TZJL90dUtIxku6S9FtJZyn/DoCk7SRdn2/od6GktfP4qyR9U9KNSr8rsXMvuS0hXeA4Ic+/j9LvZfxZ0v9KeqWkSaSLhj6dexE7Szq2t1zM+sqFwFZoEXEPaTtfN496I/ChiNgNeB7YPyJeC+wKfCcXjMmkeyBtDxxAuv9Nt9NJN0XbhnQFZ7GnMTIidgA+1WP8ciS9DHgDS++Weg2wY0RsT7pl8fRIt8OeCXwvIraL5W+o1yoXs9J8aMjqoHhnxt/G0rs8CviapDcD/yLtnb8SeBPwy4h4DiD3IJC0FjA6Irp/meo00u1Kul2Q/99Eui9MIxvnm+BtCpwXEbfm8esD5yjdQ34UcG/LBeo9F7PS3COwFZqkVwFLWPojJ88WJh9Mumvp6/J5hYeBl9H4lr5lvJD/L6H5Ttbf8nNtAuwoad88/kfAcRHxGuA/ch5mA8KFwFZYksaSDq0cF41vqrUW8EhE/DPfm3/DPP4aYB9JL1P6TeW9ASLiKeDJwvH/DwAtf7e2mUg/9HMU6bcjunNZkB9/qND0GWCNBvN3LBczHxqyFc2q+dDLyqQ7iP6M9NvIjZwBXCJpDunumXcBRMRsSReT7lj5d2AO8FSe50PAzPyrUveQfm+6vy4Cjs0f5scCv5C0gHSXzI1ym0uA8/KJ7E/0mL+TuViN+e6jZg1IWj0iFuUP2auBwyPiT4Odl1kV3CMwa+xESVuRjtWf5iJgKzL3CMzMas4ni83Mas6FwMys5lwIzMxqzoXAzKzmXAjMzGru/wDIt/ZJu14q8QAAAABJRU5ErkJggg==
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bwrg</span> <span class="o">=</span> <span class="n">finalr</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;BRatio&#39;</span><span class="p">])[</span><span class="s1">&#39;BRatio&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="n">bwrg</span> <span class="o">=</span> <span class="n">bwrg</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span>
+<span class="n">bwrg</span> <span class="o">=</span> <span class="n">bwrg</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;BRatio&quot;</span> <span class="p">:</span> <span class="s2">&quot;count&quot;</span><span class="p">})</span>
+<span class="n">bwrg</span> <span class="o">=</span> <span class="n">bwrg</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">bwrg</span><span class="p">[</span><span class="s1">&#39;BRatio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">bwrg</span><span class="p">[</span><span class="s1">&#39;BRatio&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:,.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">)</span>
+<span class="n">bwrg</span> <span class="o">=</span> <span class="n">bwrg</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">bwrg</span> <span class="o">=</span> <span class="n">bwrg</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">bwrg2</span> <span class="o">=</span> <span class="n">bwrg</span><span class="o">.</span><span class="n">loc</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">bwrg2</span> <span class="o">=</span> <span class="n">bwrg2</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;count&quot;</span> <span class="p">:</span> <span class="s2">&quot;countloss&quot;</span><span class="p">,</span> <span class="s2">&quot;BRatio&quot;</span> <span class="p">:</span> <span class="s2">&quot;Ratioloss&quot;</span><span class="p">})</span>
+<span class="n">bwrg</span> <span class="o">=</span> <span class="n">bwrg</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">bwrg2</span><span class="p">)</span>
+<span class="n">bwrg</span><span class="p">[</span><span class="s1">&#39;Win Rate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">bwrg</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">bwrg</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">+</span><span class="n">bwrg</span><span class="p">[</span><span class="s1">&#39;countloss&#39;</span><span class="p">])</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">bwrg</span><span class="p">[</span><span class="s1">&#39;BRatio&#39;</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">bwrg</span><span class="p">[</span><span class="s1">&#39;Win Rate&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Ratio of Barons Taken:Total vs Win Rate&#39;</span><span class="p">,</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Baron Ratio&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rhwrg</span> <span class="o">=</span> <span class="n">finalr</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;RHRatio&#39;</span><span class="p">])[</span><span class="s1">&#39;RHRatio&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="n">rhwrg</span> <span class="o">=</span> <span class="n">rhwrg</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span>
+<span class="n">rhwrg</span> <span class="o">=</span> <span class="n">rhwrg</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;RHRatio&quot;</span> <span class="p">:</span> <span class="s2">&quot;count&quot;</span><span class="p">})</span>
+<span class="n">rhwrg</span> <span class="o">=</span> <span class="n">rhwrg</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">rhwrg</span> <span class="o">=</span> <span class="n">rhwrg</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">rhwrg2</span> <span class="o">=</span> <span class="n">rhwrg</span><span class="o">.</span><span class="n">loc</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">rhwrg2</span> <span class="o">=</span> <span class="n">rhwrg2</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;count&quot;</span> <span class="p">:</span> <span class="s2">&quot;countloss&quot;</span><span class="p">,</span> <span class="s2">&quot;RHRatio&quot;</span> <span class="p">:</span> <span class="s2">&quot;Ratioloss&quot;</span><span class="p">})</span>
+<span class="n">rhwrg</span> <span class="o">=</span> <span class="n">rhwrg</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">rhwrg2</span><span class="p">)</span>
+<span class="n">rhwrg</span><span class="p">[</span><span class="s1">&#39;Win Rate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rhwrg</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">rhwrg</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">+</span><span class="n">rhwrg</span><span class="p">[</span><span class="s1">&#39;countloss&#39;</span><span class="p">])</span>
+<span class="n">seaborn</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">rhwrg</span><span class="p">[</span><span class="s1">&#39;RHRatio&#39;</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">rhwrg</span><span class="p">[</span><span class="s1">&#39;Win Rate&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Ratio of Rift Heralds Taken:Total vs Win Rate&#39;</span><span class="p">,</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Rift Ratio&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[Text(0.5, 1.0, &#39;Ratio of Rift Heralds Taken:Total vs Win Rate&#39;),
+ Text(0.5, 0, &#39;Rift Ratio&#39;)]</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>After factoring out the game duration there is still a clean correlation between win rate and successful objective kills. This trend is also visible among the capture of all objectives together. When factoring out game duration, if the overall ratio of objectives captured increases, win rate tends to increase along with it.</p>
+
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wrg</span> <span class="o">=</span> <span class="n">finalr</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Ratio&#39;</span><span class="p">])[</span><span class="s1">&#39;Ratio&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="n">wrg</span> <span class="o">=</span> <span class="n">wrg</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span>
+<span class="n">wrg</span> <span class="o">=</span> <span class="n">wrg</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Ratio&quot;</span> <span class="p">:</span> <span class="s2">&quot;count&quot;</span><span class="p">})</span>
+<span class="n">wrg</span> <span class="o">=</span> <span class="n">wrg</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">wrg</span> <span class="o">=</span> <span class="n">wrg</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="mi">52</span><span class="p">,</span><span class="mi">51</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">49</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span><span class="mi">38</span><span class="p">,</span><span class="mi">34</span><span class="p">])</span>
+<span class="n">wrg</span><span class="p">[</span><span class="s1">&#39;Ratio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">wrg</span><span class="p">[</span><span class="s1">&#39;Ratio&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:,.1f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">)</span>
+<span class="n">wrg</span> <span class="o">=</span>  <span class="n">wrg</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">wrg2</span> <span class="o">=</span> <span class="n">wrg</span><span class="o">.</span><span class="n">loc</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">wrg2</span> <span class="o">=</span> <span class="n">wrg2</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;count&quot;</span> <span class="p">:</span> <span class="s2">&quot;countloss&quot;</span><span class="p">,</span> <span class="s2">&quot;Ratio&quot;</span> <span class="p">:</span> <span class="s2">&quot;Ratioloss&quot;</span><span class="p">})</span>
+<span class="n">wrg</span> <span class="o">=</span> <span class="n">wrg</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">wrg2</span><span class="p">)</span>
+<span class="n">wrg</span><span class="p">[</span><span class="s1">&#39;Win Rate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">wrg</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">wrg</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span><span class="o">+</span><span class="n">wrg</span><span class="p">[</span><span class="s1">&#39;countloss&#39;</span><span class="p">])</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">wrg</span><span class="p">[</span><span class="s1">&#39;Ratio&#39;</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">wrg</span><span class="p">[</span><span class="s1">&#39;Win Rate&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Ratio of Objectives Taken:Total vs Win Rate&#39;</span><span class="p">,</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Objective Ratio&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Game duration and relative objectives work hand in hand with respect to determining win rate. Having more objectives with respect to the opponent tends to show a stronger correlation compared to having just a greater number of objectives.</p>
+
+</div>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Predicting-a-win-based-on-objectives">Predicting a win based on objectives<a class="anchor-link" href="#Predicting-a-win-based-on-objectives">&#182;</a></h3>
 </div>
 </div>
@@ -17533,7 +18147,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create dataframe for machine learning testing</span>
@@ -17586,7 +18200,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 
 
 
@@ -17625,6 +18239,32 @@ gameId: A unique number that identifies the game</code></pre>
     <tr>
       <th>0</th>
       <td>2.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4.0</td>
       <td>0.0</td>
       <td>1.0</td>
       <td>True</td>
@@ -17636,55 +18276,29 @@ gameId: A unique number that identifies the game</code></pre>
       <td>1</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>4.0</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-      <td>1.0</td>
-      <td>0.0</td>
-      <td>1.0</td>
-      <td>0</td>
-    </tr>
-    <tr>
       <th>3</th>
-      <td>0.0</td>
       <td>1.0</td>
+      <td>0.0</td>
       <td>1.0</td>
       <td>False</td>
       <td>True</td>
       <td>True</td>
-      <td>5.0</td>
-      <td>1.0</td>
+      <td>2.0</td>
       <td>0.0</td>
+      <td>1.0</td>
       <td>0</td>
     </tr>
     <tr>
       <th>4</th>
       <td>1.0</td>
       <td>0.0</td>
-      <td>1.0</td>
+      <td>0.0</td>
+      <td>True</td>
       <td>True</td>
       <td>False</td>
-      <td>True</td>
-      <td>2.0</td>
       <td>1.0</td>
       <td>0.0</td>
+      <td>1.0</td>
       <td>0</td>
     </tr>
     <tr>
@@ -17702,53 +18316,53 @@ gameId: A unique number that identifies the game</code></pre>
     </tr>
     <tr>
       <th>78118</th>
-      <td>4.0</td>
+      <td>3.0</td>
       <td>0.0</td>
       <td>1.0</td>
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>1.0</td>
+      <td>2.0</td>
       <td>2.0</td>
       <td>0.0</td>
-      <td>0</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>78119</th>
-      <td>4.0</td>
+      <td>3.0</td>
       <td>1.0</td>
       <td>1.0</td>
+      <td>False</td>
       <td>True</td>
       <td>True</td>
-      <td>True</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
       <td>1</td>
     </tr>
     <tr>
       <th>78120</th>
-      <td>1.0</td>
+      <td>2.0</td>
       <td>0.0</td>
-      <td>1.0</td>
-      <td>True</td>
+      <td>0.0</td>
       <td>False</td>
-      <td>True</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
+      <td>False</td>
+      <td>False</td>
+      <td>3.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
       <td>1</td>
     </tr>
     <tr>
       <th>78121</th>
-      <td>1.0</td>
       <td>0.0</td>
-      <td>2.0</td>
-      <td>False</td>
+      <td>0.0</td>
+      <td>1.0</td>
       <td>False</td>
       <td>True</td>
-      <td>3.0</td>
-      <td>1.0</td>
+      <td>True</td>
+      <td>2.0</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0</td>
     </tr>
@@ -17756,13 +18370,13 @@ gameId: A unique number that identifies the game</code></pre>
       <th>78122</th>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.0</td>
+      <td>1.0</td>
+      <td>False</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
+      <td>3.0</td>
       <td>1.0</td>
       <td>0.0</td>
-      <td>1.0</td>
       <td>0</td>
     </tr>
   </tbody>
@@ -17790,7 +18404,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Split dataset into training and test sets</span>
@@ -17819,7 +18433,7 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dtClassifier</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
@@ -17853,8 +18467,8 @@ gameId: A unique number that identifies the game</code></pre>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>              precision    recall  f1-score   support
 
-           0       0.93      0.95      0.94      9681
-           1       0.95      0.93      0.94      9850
+           0       0.93      0.95      0.94      9707
+           1       0.95      0.93      0.94      9824
 
     accuracy                           0.94     19531
    macro avg       0.94      0.94      0.94     19531
@@ -17873,7 +18487,7 @@ weighted avg       0.94      0.94      0.94     19531
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">rfClassifier</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
@@ -17907,8 +18521,8 @@ weighted avg       0.94      0.94      0.94     19531
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>              precision    recall  f1-score   support
 
-           0       0.94      0.95      0.94      9681
-           1       0.95      0.94      0.94      9850
+           0       0.94      0.94      0.94      9707
+           1       0.94      0.94      0.94      9824
 
     accuracy                           0.94     19531
    macro avg       0.94      0.94      0.94     19531
